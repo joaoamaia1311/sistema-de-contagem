@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de contagem</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="titulo">
+      <h1>Sistema de contagem</h1>
+    </header>
+    <div class="container">
+      <div class="caixainicial">
+        <label for="inicio">Número inicial:</label>
+        <input
+          type="number"
+          id="inputinicio"
+          placeholder="Digite o número inicial"
+        />
+      </div>
+      <div class="caixafim">
+        <label for="fim">Número final:</label>
+        <input
+          type="number"
+          id="inputfim"
+          placeholder="Digite o número final"
+        />
+      </div>
+      <div class="caixapasso">
+        <label for="passo">Passo:</label>
+        <input type="number" id="inputpasso" placeholder="Digite o passo" />
+      </div>
+      <div class="btn">
+        <button id="btncontar" onclick="contar()">Contar</button>
+      </div>
+      <div class="caixaresultado">
+        <h2>Resultado:</h2>
+        <div class="resultado">Aguardando contagem...</div>
+      </div>
+    </div>
+  </body>
+</html>
